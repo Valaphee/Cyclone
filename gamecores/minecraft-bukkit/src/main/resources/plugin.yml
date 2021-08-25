@@ -1,0 +1,21 @@
+name: "${project.artifactId}"
+version: "${project.version} (${buildNumber})"
+author: "Valaphee <iam@valaphee.com>"
+description: >
+  High-performance cloud with very high redundancy.
+  Suitable for games with very low latency
+  and great clusters. Uses a unique cluster technology
+  which allows to work without master.
+website: "https://www.valaphee.com"
+load: STARTUP
+main: "com.valaphee.cyclone.Cyclone"
+prefix: "Cyclone"
+permissions:
+  cyclone.*:
+    description: "Gives access to all Cyclone function and commands."
+    children:
+      cyclone.joinfullserver: true
+  cyclone.joinfullserver:
+    description: "Allow you to join full server."
+    default: false
+api-version: 1.13

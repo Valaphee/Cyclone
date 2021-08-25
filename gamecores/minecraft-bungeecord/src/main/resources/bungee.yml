@@ -1,0 +1,4 @@
+name: "${project.artifactId}"
+version: "${project.version} (${buildNumber})"
+author: "Valaphee <iam@valaphee.com>"
+main: "com.valaphee.cyclone.Cyclone"

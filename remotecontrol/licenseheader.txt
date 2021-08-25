@@ -1,0 +1,18 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Copyright (c) by Valaphee 2019.
+${licensePrefix}
+${licensePrefix}Licensed under the 4-clause BSD license (the "License");
+${licensePrefix}you may not use this file except in compliance with
+${licensePrefix}the License. You may obtain a copy of the License at
+${licensePrefix}
+${licensePrefix}     https://deploy.valaphee.com/license/BSD-4-Clause.txt
+${licensePrefix}
+${licensePrefix}THIS SOFTWARE IS PROVIDED BY VALAPHEE "AS IS" AND ANY
+${licensePrefix}EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+${licensePrefix}WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+${licensePrefix}DISCLAIMED.
+<#if licenseLast??>
+${licenseLast}
+</#if>

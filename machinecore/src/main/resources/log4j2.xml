@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="com.valaphee.cyclone.logging" xmlns="http://logging.apache.org/log4j/2.0/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://git-wip-us.apache.org‌​/repos/asf?p=logging‌​-log4j2.git;a=blob_p‌​lain;f=log4j-core/sr‌​c/main/resources/Log‌​4j-config.xsd">
+	<Appenders>
+		<Console name="WINDOWS_COMPAT" target="SYSTEM_OUT"/>
+		<RollingRandomAccessFile name="File" fileName="logs/latest.log" filePattern="logs/%d{yyyyMMdd}.%i.log" append="true">
+			<PatternLayout pattern="[%d{EEE MMM dd HH:mm:ss.SSS yyyy}] [%t] [%p]: %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingRandomAccessFile>
+		<Queue name="Console">
+			<PatternLayout pattern="[%d{HH:mm:ss.SSS}] [%t] [%p] %m%n"/>
+		</Queue>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="WINDOWS_COMPAT"/>
+			<AppenderRef ref="File"/>
+			<AppenderRef ref="Console"/>
+		</Root>
+	</Loggers>
+</Configuration>

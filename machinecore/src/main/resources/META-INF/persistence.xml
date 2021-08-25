@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="net.unitybeast_cyclone-machinecore_jar_1.2.3PU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.valaphee.cyclone.server.data.ServerTable</class>
+		<class>com.valaphee.cyclone.server.data.ServerCategoryTable</class>
+		<class>com.valaphee.cyclone.server.data.ServerCategoryScoreCriteriaTable</class>
+		<class>com.valaphee.cyclone.server.data.ServerCategoryVariableTable</class>
+		<class>com.valaphee.cyclone.account.data.UserVariableTable</class>
+		<class>com.valaphee.cyclone.account.data.UserPunishmentTable</class>
+		<class>com.valaphee.cyclone.account.data.GroupTable</class>
+		<class>com.valaphee.cyclone.account.data.GroupInheritanceTable</class>
+		<class>com.valaphee.cyclone.account.data.GroupVariableTable</class>
+		<class>com.valaphee.cyclone.account.data.UserTable</class>
+		<class>com.valaphee.cyclone.account.data.UserAssociationTable</class>
+		<class>com.valaphee.cyclone.account.data.GroupPermissionTable</class>
+		<class>com.valaphee.cyclone.account.data.UserIpTable</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value=""/>
+			<property name="javax.persistence.jdbc.user" value=""/>
+			<property name="javax.persistence.jdbc.driver" value=""/>
+			<property name="javax.persistence.jdbc.password" value=""/>
+			<property name="javax.persistence.schema-generation.database.action" value="create"/>
+		</properties>
+	</persistence-unit>
+</persistence>
